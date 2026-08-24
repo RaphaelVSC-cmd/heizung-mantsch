@@ -535,6 +535,9 @@ function openLegalModal(modalId) {
   modal.classList.add('open');
   modal.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
+  if (typeof lenis !== 'undefined' && lenis) {
+    lenis.stop();
+  }
   const closeBtn = modal.querySelector('.legal-modal-close');
   closeBtn?.focus();
 }
@@ -548,6 +551,9 @@ function closeLegalModal(modalId) {
   const isMobileOpen = document.getElementById('mobileMenu')?.classList.contains('open');
   if (!isMobileOpen) {
     document.body.style.overflow = '';
+    if (typeof lenis !== 'undefined' && lenis) {
+      lenis.start();
+    }
   }
 }
 

@@ -902,16 +902,17 @@ body {
   position: fixed;
   inset: 0;
   z-index: 99999;
-  background: rgba(5, 7, 12, 0.82);
+  background: rgba(5, 7, 12, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.25rem;
+  padding: 1rem;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.35s cubic-bezier(0.32, 0.72, 0, 1), visibility 0.35s ease;
+  overscroll-behavior: contain;
 }
 
 .legal-modal-backdrop.open {
@@ -921,11 +922,14 @@ body {
 
 .legal-modal-card {
   width: 100%;
-  max-width: 820px;
-  max-height: 88vh;
+  max-width: 800px;
+  max-height: 86vh;
+  display: flex;
+  flex-direction: column;
   transform: scale(0.94) translateY(16px);
   transition: transform 0.35s cubic-bezier(0.32, 0.72, 0, 1);
   box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
+  overscroll-behavior: contain;
 }
 
 .legal-modal-backdrop.open .legal-modal-card {
@@ -933,17 +937,24 @@ body {
 }
 
 .legal-modal-close {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.25rem;
-  height: 2.25rem;
-  border-radius: 50%;
+  flex-shrink: 0 !important;
+  width: 2.25rem !important;
+  height: 2.25rem !important;
+  min-width: 2.25rem !important;
+  min-height: 2.25rem !important;
+  border-radius: 9999px !important;
   border: 1px solid var(--border);
   background: var(--bg);
   color: var(--fg);
   font-size: 1rem;
+  font-weight: 700;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   cursor: pointer;
+  padding: 0 !important;
+  line-height: 1 !important;
+  box-sizing: border-box !important;
   transition: all 0.2s ease;
 }
 
@@ -955,7 +966,11 @@ body {
 }
 
 .legal-modal-body {
-  max-height: calc(88vh - 6.5rem);
+  max-height: calc(86vh - 5.5rem);
+  overflow-y: auto !important;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
   scrollbar-width: thin;
   scrollbar-color: var(--border) transparent;
 }
@@ -968,4 +983,5 @@ body {
   background: var(--border);
   border-radius: 9999px;
 }
+
 

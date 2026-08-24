@@ -1378,23 +1378,23 @@
   <!-- ═══════════════════════════════════════════════════════════ -->
 
   <!-- Impressum Modal -->
-  <div id="impressumModal" class="legal-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="impressumModalTitle">
-    <div class="legal-modal-card bento-shell">
-      <div class="bento-core p-6 sm:p-10 relative flex flex-col max-h-[85vh]">
+  <div id="impressumModal" class="legal-modal-backdrop" data-lenis-prevent aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="impressumModalTitle">
+    <div class="legal-modal-card bento-shell" data-lenis-prevent>
+      <div class="bento-core p-5 sm:p-8 relative flex flex-col max-h-[85vh] overflow-hidden" data-lenis-prevent>
         
         <!-- Modal Header -->
-        <div class="flex items-center justify-between border-b border-[var(--border)] pb-4 mb-6 sticky top-0 bg-[var(--card-bg)] z-10">
-          <div class="flex items-center gap-2">
-            <span class="text-xl" aria-hidden="true">⚖️</span>
-            <h2 class="text-2xl font-bold text-[var(--fg)]" id="impressumModalTitle">Impressum</h2>
+        <div class="flex items-center justify-between border-b border-[var(--border)] pb-4 mb-4 flex-shrink-0">
+          <div class="flex items-center gap-2 min-w-0 pr-3">
+            <span class="text-xl flex-shrink-0" aria-hidden="true">⚖️</span>
+            <h2 class="text-lg sm:text-2xl font-bold text-[var(--fg)] truncate" id="impressumModalTitle">Impressum</h2>
           </div>
-          <button class="legal-modal-close" data-close-modal="impressumModal" aria-label="Impressum schließen">
+          <button class="legal-modal-close flex-shrink-0" data-close-modal="impressumModal" aria-label="Impressum schließen">
             <span aria-hidden="true">✕</span>
           </button>
         </div>
 
         <!-- Modal Body (Scrollable) -->
-        <div class="legal-modal-body overflow-y-auto pr-2 space-y-6 text-sm text-[var(--fg-muted)] leading-relaxed">
+        <div class="legal-modal-body overflow-y-auto pr-2 space-y-6 text-sm text-[var(--fg-muted)] leading-relaxed" data-lenis-prevent>
           <div>
             <h3 class="text-base font-bold text-[var(--fg)] mb-2">Angaben gemäß § 5 TMG</h3>
             <address class="not-italic">
@@ -1446,23 +1446,23 @@
   </div>
 
   <!-- Datenschutz Modal -->
-  <div id="datenschutzModal" class="legal-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="datenschutzModalTitle">
-    <div class="legal-modal-card bento-shell">
-      <div class="bento-core p-6 sm:p-10 relative flex flex-col max-h-[85vh]">
+  <div id="datenschutzModal" class="legal-modal-backdrop" data-lenis-prevent aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="datenschutzModalTitle">
+    <div class="legal-modal-card bento-shell" data-lenis-prevent>
+      <div class="bento-core p-5 sm:p-8 relative flex flex-col max-h-[85vh] overflow-hidden" data-lenis-prevent>
         
         <!-- Modal Header -->
-        <div class="flex items-center justify-between border-b border-[var(--border)] pb-4 mb-6 sticky top-0 bg-[var(--card-bg)] z-10">
-          <div class="flex items-center gap-2">
-            <span class="text-xl" aria-hidden="true">🔒</span>
-            <h2 class="text-2xl font-bold text-[var(--fg)]" id="datenschutzModalTitle">Datenschutzerklärung</h2>
+        <div class="flex items-center justify-between border-b border-[var(--border)] pb-4 mb-4 flex-shrink-0">
+          <div class="flex items-center gap-2 min-w-0 pr-3">
+            <span class="text-xl flex-shrink-0" aria-hidden="true">🔒</span>
+            <h2 class="text-lg sm:text-2xl font-bold text-[var(--fg)] truncate" id="datenschutzModalTitle">Datenschutzerklärung</h2>
           </div>
-          <button class="legal-modal-close" data-close-modal="datenschutzModal" aria-label="Datenschutzerklärung schließen">
+          <button class="legal-modal-close flex-shrink-0" data-close-modal="datenschutzModal" aria-label="Datenschutzerklärung schließen">
             <span aria-hidden="true">✕</span>
           </button>
         </div>
 
         <!-- Modal Body (Scrollable) -->
-        <div class="legal-modal-body overflow-y-auto pr-2 space-y-6 text-sm text-[var(--fg-muted)] leading-relaxed">
+        <div class="legal-modal-body overflow-y-auto pr-2 space-y-6 text-sm text-[var(--fg-muted)] leading-relaxed" data-lenis-prevent>
           <div>
             <h3 class="text-base font-bold text-[var(--fg)] mb-2">1. Datenschutz auf einen Blick</h3>
             <p>
