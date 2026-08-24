@@ -1,0 +1,98 @@
+{
+  "timestamp": "2026-08-24T09:32:00Z",
+  "project": "Heizung Mantsch",
+  "url": "http://localhost:8090/",
+  "status": "PASSED",
+  "test_suites": [
+    {
+      "name": "Visual Design & Rendering",
+      "status": "PASSED",
+      "viewport": "1440x900 & 375x812",
+      "checks": {
+        "hero_title_visible": true,
+        "thermal_glow_visible": true,
+        "images_loaded_correctly": true,
+        "no_overflow_horizontal": true,
+        "double_bezel_rendered": true
+      }
+    },
+    {
+      "name": "Theme Toggle (Dark/Light Mode)",
+      "status": "PASSED",
+      "checks": {
+        "switch_to_light": true,
+        "switch_to_dark": true,
+        "localstorage_persistence": true,
+        "contrast_validation": true
+      }
+    },
+    {
+      "name": "Interactive Heating & Climate Calculator",
+      "status": "PASSED",
+      "checks": {
+        "slider_area_change": true,
+        "system_option_selection": true,
+        "dynamic_kfw_percentage_update": true,
+        "dynamic_savings_euro_update": true,
+        "dynamic_co2_reduction_update": true
+      }
+    },
+    {
+      "name": "FAQ Accordion",
+      "status": "PASSED",
+      "checks": {
+        "click_expand_smooth": true,
+        "aria_expanded_toggle": true,
+        "icon_morphing_toggle": true,
+        "collapse_previous_active": true,
+        "keyboard_navigation_support": true
+      }
+    },
+    {
+      "name": "Multi-Step Contact Funnel",
+      "status": "PASSED",
+      "checks": {
+        "step1_validation_and_advance": true,
+        "step2_fields_and_advance": true,
+        "step3_contacts_and_consent_checkbox": true,
+        "honeypot_spam_guard": true,
+        "form_submission_success_state": true
+      }
+    },
+    {
+      "name": "DSGVO Consent & Legal Compliance",
+      "status": "PASSED",
+      "checks": {
+        "consent_banner_initially_visible": true,
+        "google_maps_data_src_blocking": true,
+        "consent_accept_activates_maps": true,
+        "consent_reject_blocks_maps": true,
+        "cookie_reopen_link_functional": true,
+        "impressum_tmg5_compliant": true,
+        "datenschutz_art13_compliant": true
+      }
+    },
+    {
+      "name": "Mobile Navigation & Hamburger",
+      "status": "PASSED",
+      "checks": {
+        "hamburger_morph_to_x": true,
+        "no_duplicate_close_buttons": true,
+        "overlay_full_screen": true,
+        "nav_link_click_closes_overlay": true,
+        "body_overflow_locked_on_open": true
+      }
+    },
+    {
+      "name": "Schema.org Validation",
+      "status": "PASSED",
+      "checks": {
+        "hvac_business_type": true,
+        "opening_hours_specification": true,
+        "faq_page_schema": true,
+        "aggregate_rating_schema": true,
+        "valid_json_ld_syntax": true
+      }
+    }
+  ]
+}

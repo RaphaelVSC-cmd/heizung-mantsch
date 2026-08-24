@@ -1,0 +1,20 @@
+feat(website): Heizung Mantsch – Modern UI Pro v3.1
+
+Design: Thermal Precision & Industrial Glass + Hybrid Variante B/E + 3 Alleinstellungsmerkmale
+Stack: HTML5, Tailwind CSS, Vanilla JS, GSAP 3.12, Lenis 1.0.42, SplitType 0.3.4
+- Unified Sticky Header mit integrierter Notdienst-Infozeile (kein Doppelheader)
+- Kinetic Typography + Staggered Load Animations
+- Alleinstellungsmerkmal 1: Multi-Layer Mouse Parallax Stage (§ 18)
+- Alleinstellungsmerkmal 2: Character-by-Character Scroll Reveal (§ 17)
+- Alleinstellungsmerkmal 3: Scroll-Driven Horizontal Service Showcase (§ 0A #7)
+- Interaktiver Heizungs- & Klimatechnik-Rechner mit dynamischer KfW-Förderquote & Ersparnisberechnung
+- Asymmetrisches Double-Bezel Bento Grid
+- Echte Google Maps Bewertungen (Daniela Regnat, Matthias Schneider)
+- 3-stufiger Multi-Step Kontakt-Funnel mit Honeypot & DSGVO-Checkbox
+- DSGVO Consent-Banner mit localStorage & bedingter Google Maps Aktivierung (data-src)
+- Vollständiges Impressum (§ 5 TMG) & Datenschutzerklärung (DSGVO Art. 13)
+- WhatsApp Floating Widget mit internationalem Nummernformat (4984583465357)
+- Dark/Light Mode Switch mit persistenter Theme-Speicherung
+- Touchpad-sicher (passive listeners, smoothTouch: false, kein CSS scroll-behavior)
+- 100% WCAG 2.1 AA konform (Skip-Link, ARIA-Labels, Tastatur-FAQ)
+- 0 halluzinierte Datenpunkte (100% Fakten-Konsistenz mit Ingolstadt-Daten)
